@@ -55,4 +55,3 @@ keyboard.destroy()
 ```
 
 NOTE: this library may be nice as standaline. independant from three.js
-- rename it keyboardForGame
