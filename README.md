@@ -7,13 +7,13 @@ Show Don't Tell
 ===============
 * [examples/basic.html](http://jeromeetienne.github.io/threex.keyboardstate/examples/basic.html)
 \[[view source](https://github.com/jeromeetienne/threex.keyboardstate/blob/master/examples/basic.html)\] :
-It shows a 3d keyboardstate.
+It shows a basic usage of keyboard state.
 * [examples/norepeatkeydown.html](http://jeromeetienne.github.io/threex.keyboardstate/examples/norepeatkeydown.html)
 \[[view source](https://github.com/jeromeetienne/threex.keyboardstate/blob/master/examples/norepeatkeydown.html)\] :
-It show a 3d keyboardstate and it is all loaded thru require.js
+It show how to avoid the key repeat if you need it.
 * [examples/standalone.html](http://jeromeetienne.github.io/threex.keyboardstate/examples/standalone.html)
 \[[view source](https://github.com/jeromeetienne/threex.keyboardstate/blob/master/examples/standalone.html)\] :
-It show a 3d keyboardstate and it is all loaded thru require.js
+It show a standalone usage, without three.js anywhere.
 
 How To Install It
 =================
