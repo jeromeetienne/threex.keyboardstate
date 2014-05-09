@@ -1,21 +1,19 @@
 threex.keyboardstate
 ====================
 
-it is a three.js extension to keep the current state of the keyboard.
-It is possible to query it at any time. No need of an event.
-This is particularly convenient in loop driven case, like in
-3D demos or games.
+threex.keyboardstate is a [threex game extension for three.js](http://jeromeetienne.github.io/threex/) which makes it easy to keep the current state of the keyboard. It is possible to query it at any time. No need of an event. This is particularly convenient in loop driven case, like in 3D demos or games. The syntax of the keys has been copied from [jquery keyboard plugin](https://github.com/jeresig/jquery.hotkeys) to ease configuration. It can help you control the characters of your three.js games. 
 
-Here is the basic example 
-[live](http://jeromeetienne.github.io/threex/src/threex.keyboardstate/examples/basic.html)
- and its 
-[source](https://github.com/jeromeetienne/threex/blob/master/src/threex.keyboardstate/examples/basic.html).
-Another one which handle [norepeat keydown event](http://jeromeetienne.github.io/threex/src/threex.keyboardstate/examples/norepeatkeydown.html)
- and its 
-[source](https://github.com/jeromeetienne/threex/blob/master/src/threex.keyboardstate/examples/norepeatkeydown.html).
-Another one which use it [standalone](http://jeromeetienne.github.io/threex/src/threex.keyboardstate/examples/standalone.html)
- and its 
-[source](https://github.com/jeromeetienne/threex/blob/master/src/threex.keyboardstate/examples/standalone.html).
+Show Don't Tell
+===============
+* [examples/basic.html](http://jeromeetienne.github.io/threex.keyboardstate/examples/basic.html)
+\[[view source](https://github.com/jeromeetienne/threex.keyboardstate/blob/master/examples/basic.html)\] :
+It shows a 3d keyboardstate.
+* [examples/norepeatkeydown.html](http://jeromeetienne.github.io/threex.keyboardstate/examples/norepeatkeydown.html)
+\[[view source](https://github.com/jeromeetienne/threex.keyboardstate/blob/master/examples/norepeatkeydown.html)\] :
+It show a 3d keyboardstate and it is all loaded thru require.js
+* [examples/standalone.html](http://jeromeetienne.github.io/threex.keyboardstate/examples/standalone.html)
+\[[view source](https://github.com/jeromeetienne/threex.keyboardstate/blob/master/examples/standalone.html)\] :
+It show a 3d keyboardstate and it is all loaded thru require.js
 
 How To Install It
 =================
