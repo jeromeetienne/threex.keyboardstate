@@ -15,9 +15,14 @@ It show how to avoid the key repeat if you need it.
 \[[view source](https://github.com/jeromeetienne/threex.keyboardstate/blob/master/examples/standalone.html)\] :
 It show a standalone usage, without three.js anywhere.
 
+
+A Screenshot
+============
+[![screenshot](https://raw.githubusercontent.com/jeromeetienne/threex.keyboardstate/master/examples/images/screenshot-threex-keyboardstate-512x512.jpg)](http://jeromeetienne.github.io/threex.keyboardstate/examples/basic.html)
+
+
 How To Install It
 =================
-
 You can install it manually. Just do 
 
 ```html
