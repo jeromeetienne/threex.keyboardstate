@@ -49,6 +49,15 @@ THREEx.KeyboardState	= function(domElement)
 	// bind keyEvents
 	this.domElement.addEventListener("keydown", this._onKeyDown, false);
 	this.domElement.addEventListener("keyup", this._onKeyUp, false);
+
+	// create callback to bind/unbind window blur event
+	this._onBlur = function(){
+		for(var prop in self.keyCodes)  self.keyCodes[prop] = false;
+		for(var prop in self.modifiers)  self.modifiers[prop] = false;
+	}
+
+	// bind window blur
+	window.addEventListener("blur", this._onBlur, false);
 }
 
 /**
@@ -59,6 +68,9 @@ THREEx.KeyboardState.prototype.destroy	= function()
 	// unbind keyEvents
 	this.domElement.removeEventListener("keydown", this._onKeyDown, false);
 	this.domElement.removeEventListener("keyup", this._onKeyUp, false);
+
+	// unbind window blur event
+	window.removeEventListener("blur", this._onBlur, false);
 }
 
 THREEx.KeyboardState.MODIFIERS	= ['shift', 'ctrl', 'alt', 'meta'];
