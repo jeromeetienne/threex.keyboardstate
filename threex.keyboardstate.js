@@ -52,8 +52,8 @@ THREEx.KeyboardState	= function(domElement)
 
 	// create callback to bind/unbind window blur event
 	this._onBlur = function(){
-		for(var prop in self.keyCodes)  self.keyCodes[prop] = false;
-		for(var prop in self.modifiers)  self.modifiers[prop] = false;
+		for(var prop in _this.keyCodes)  _this.keyCodes[prop] = false;
+		for(var prop in _this.modifiers)  _this.modifiers[prop] = false;
 	}
 
 	// bind window blur
