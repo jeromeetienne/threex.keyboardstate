@@ -32,30 +32,26 @@
 	//////////////////////////////////////////////////////////////////////////////////
 	
 	/**
-	 * ## how to get rid of keyboard auto repeat
-	 * * keydown is repeated automatically due to keyboard autorepeat
-	 * * this is an example of how to handle detect keydown without autorepat
+	 * ## how to get rid of keyboard autorepeat
+	 * * keyboardEvent has a .repeat boolean property, use this to ignore autorepeats
 	 */
 
-	// only on keydown + no repeat
-	var wasPressed	= {};
+	// handle keydown, return early if event is an autorepeat
 	keyboard.domElement.addEventListener('keydown', function(event){
-		if( keyboard.eventMatches(event, 'left') && !wasPressed['left'] ){
-			mesh.rotation.x	+= -Math.PI/6
-			wasPressed['left']	= true;
+		if (event.repeat) {
+			return;
 		}
-		if( keyboard.eventMatches(event, 'right') && !wasPressed['right']){
-			mesh.rotation.x	+= +Math.PI/6
-			wasPressed['right']	= true;			
+		if ( keyboard.eventMatches(event, 'left') ){
+			mesh.rotation.y	-= 0.2;   
 		}
-	})	
-	// listen on keyup to maintain ```wasPressed``` array
-	keyboard.domElement.addEventListener('keyup', function(event){
-		if( keyboard.eventMatches(event, 'left') ){
-			wasPressed['left']	= false;
+		if ( keyboard.eventMatches(event, 'right') ){
+			mesh.rotation.y	+= 0.2;   
 		}
-		if( keyboard.eventMatches(event, 'right') ){
-			wasPressed['right']	= false;
+		if ( keyboard.eventMatches(event, 'up') ){
+			mesh.rotation.x	-= 0.2;   
+		}
+		if ( keyboard.eventMatches(event, 'down') ){
+			mesh.rotation.x	+= 0.2;   
 		}
 	})
 
